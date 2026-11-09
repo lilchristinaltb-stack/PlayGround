@@ -1,4 +1,13 @@
-# PlayGround
+# Starbound Runner
+
+A complete, browser-playable sci-fi platformer. Run locally by opening `index.html` or serving this folder with any static web server.
+
+- **Move:** A/D or ←/→
+- **Jump:** Space, W, ↑, or Z
+- **Pause:** Esc or the pause button
+- **Touch:** On-screen directional and jump controls on touch devices
+
+Collect energy cells, dodge or stomp the sentry slimes, and reach the beacon at the end of the Neon Frontier.
 
 <!-- omgithub:readme:start -->
 ## 🚀 Build, play, and remix with OMGithub

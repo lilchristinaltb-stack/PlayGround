@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#070b1a" />
+  <title>Starbound Runner — Neon Frontier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Starbound Runner home"><span class="brand-mark">✦</span> NOVA<span class="brand-light">/ARCADE</span></a>
+      <div class="top-meta"><span class="live-dot"></span> SECTOR 07 <i>•</i> THE NEON FRONTIER</div>
+      <button class="sound-button" id="soundButton" aria-label="Toggle sound">♫ <span>SOUND</span></button>
+    </header>
+    <section class="game-frame" aria-label="Starbound Runner game">
+      <canvas id="game" width="960" height="540" aria-label="A side-scrolling sci-fi platform game"></canvas>
+      <div class="hud" id="hud" hidden>
+        <div class="hud-left"><div class="hud-label">MISSION <b>01</b></div><div class="hud-title">THE LAST BEACON</div></div>
+        <div class="hud-center"><span class="hud-label">ENERGY CELLS</span><div class="cell-count"><span class="cell-icon">✦</span><b id="cellCount">00</b><span class="cell-total">/ 15</span></div></div>
+        <div class="hud-right"><span class="hud-label">LIVES</span><div id="lives" class="lives">♥ ♥ ♥</div></div>
+        <button class="pause-button" id="pauseButton" aria-label="Pause game">Ⅱ</button>
+      </div>
+      <div class="screen-overlay" id="overlay">
+        <div class="overlay-content" id="overlayContent"></div>
+      </div>
+      <div class="toast" id="toast" aria-live="polite"></div>
+      <div class="touch-controls" aria-label="Touch controls">
+        <div class="touch-direction"><button data-control="left" aria-label="Move left">‹</button><button data-control="right" aria-label="Move right">›</button></div>
+        <button class="touch-jump" data-control="jump" aria-label="Jump">↑<small>JUMP</small></button>
+      </div>
+    </section>
+    <footer class="below-bar"><span><b>WASD</b> / <b>← →</b> MOVE <i>·</i> <b>SPACE</b> JUMP</span><span class="footer-center">A LITTLE HOP. A GIANT LEAP.</span><span>© 2089 <b>ORBITAL STUDIOS</b></span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
